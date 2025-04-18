@@ -1,45 +1,70 @@
-# Auto-Tarrif-Analysis-Dashboard
-A Power BI dashboard visualizing global automotive tariffs using country-wise data. The report provides interactive insights into tariff rates by product and region to support trade analysis and strategic decision-making.
-# 🚗 Automotive Tariff Dashboard – Power BI Project
+# Automotive Tariff Impact Dashboard
 
-## 📊 Project Overview
-An interactive Power BI dashboard that analyzes global automotive tariff data. The report provides insights into country-wise tariff structures, product categories, and import/export patterns to support decision-making in the international automotive trade sector.
+This Power BI dashboard provides insights into the impact of tariffs on the automotive industry, focusing on sales performance, manufacturer exposure, and international pricing dynamics. It is designed to help stakeholders analyze pre- and post-tariff conditions across various dimensions.
 
-## 📁 Dataset
-Source: `All_Tables_With_Country_ID.xlsx`  
-The dataset includes:
-- Country IDs and Names
-- HS Codes (Harmonized System)
-- Product Categories
-- Tariff Rates (%)
-- Import/Export Flags
-- Tariff Type Details
+## 📊 Key Performance Indicators (KPIs)
 
-## ✅ Key KPIs
-- Average Tariff % by Country
-- Number of Tariffed Products
-- Total Countries in Dataset
-- Highest and Lowest Tariff Identifiers
-- Tariff Distribution by Product Type
+The dashboard includes the following 6 KPI cards:
 
-## 📊 Visualizations
-- **Map View** – Country-wise tariff heat map
-- **Bar Chart** – Top 10 countries by average tariff
-- **Treemap** – Tariff spread across product categories
-- **Line/Trend Chart** – Category-wise tariff trends (if available)
-- **KPI Cards** – Highlight major insights
-- **Slicer Filters** – Dynamic filtering by Country, Product Type, HS Code, and Trade Type
+1. **Pre-Tariff Sales Unit**  
+   Total units sold before the tariff was implemented.
 
-## 🛠️ Tools & Technologies
-- Power BI Desktop
-- DAX (Data Analysis Expressions)
-- Power Query (M Language)
-- Microsoft Excel
+2. **Post-Tariff Sales Unit**  
+   Total units sold after the tariff was applied.
 
-## 🔍 Insights
-- Identify countries with high or low automotive tariffs
-- Analyze tariff distribution across product categories
-- Explore import vs export duty differences
-- Compare tariff strategies across regions
+3. **Average Sales Drop (%)**  
+   Average percentage decrease in unit sales due to tariffs.
 
-## 📂 Project Structure
+4. **Max CUB Tariff (%)**  
+   Maximum tariff rate imposed on CUB (Country Under Benchmark).
+
+5. **Max EV Rate (%)**  
+   Highest tariff rate observed on Electric Vehicles.
+
+6. **Total Tariff Impact (%)**  
+   Overall percentage impact of tariffs across the industry.
+
+## 📈 Visualizations
+
+The dashboard contains six insightful charts:
+
+1. **Average Tariff Impact % by Manufacturer**  
+   - Chart Type: Stacked Bar Chart  
+   - Purpose: Compare average tariff impacts across different manufacturers.
+
+2. **Unit Loss by Segment**  
+   - Chart Type: Stacked Bar Chart  
+   - Purpose: Show unit losses by vehicle segment post-tariff.
+
+3. **Tariff Rate by Country**  
+   - Chart Type: Map  
+   - Purpose: Visualize tariff rates geographically by country.
+
+4. **Pre vs Post Tariff Sales**  
+   - Chart Type: Line Chart  
+   - Purpose: Analyze sales trends before and after tariff enforcement.
+
+5. **Manufacturer Risk Matrix**  
+   - Chart Type: Scatter Chart  
+   - Purpose: Identify manufacturers with high tariff exposure and sales sensitivity.
+
+6. **Import Share vs Price Increase**  
+   - Chart Type: Clustered Column Chart  
+   - Purpose: Correlate import market share with price increases due to tariffs.
+
+## 📁 Files Included
+
+- `Automotive Tariff Dashboard.pbix` – Power BI dashboard file  
+- `All_Tables_With_Country_ID.xlsx` – Excel data source for the dashboard
+
+## 🛠 Tools Used
+
+- Power BI (for data visualization and dashboarding)
+- Microsoft Excel (for data sourcing and preparation)
+
+## 🔄 How to Use
+
+1. Open the `.pbix` file using Power BI Desktop.
+2. Connect or verify the path to the Excel file (`All_Tables_With_Country_ID.xlsx`).
+3. Refresh the data to ensure the latest updates are reflected.
+4. Explore the KPIs and visualizations to understand the tariff impact.
